@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Estilo da Navegação */
+nav {
+    font-family: 'Bebas Neue', sans-serif; /* Adicione fontes fallback */
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #8d3001;
+    color: #fff;
+    padding: 5px 15px; /* Reduzido para ocupar menos espaço */
+    display: flex;
+    align-items: center;
+    height: 100px; /* Altura definida para manter uma proporção menor */
+}
+
+/* Logo secundário no lado esquerdo do menu */
+.logo {
+    position: absolute; /* Posição absoluta para fixar no canto */
+    left: 5%; /* Ajusta para o canto esquerdo */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para o centro vertical */
+    max-width: 100px; /* Reduz tamanho do logo secundário */
+    height: auto;
+}
+
+/* Contêiner do Menu de Navegação */
+.nav-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Menu de Navegação */
+#navMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    gap: 15px; /* Espaçamento aumentado entre os itens */
+}
+
+
+#navMenu li {
+    margin: 0;
+}
+
+#navMenu a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    padding: 8px 12px; /* Adiciona um pouco de espaço ao redor do texto */
+    transition: all 0.3s; /* Adiciona transição para animação */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#navMenu a:hover {
+    font-size: 18px;
+    color: #ffffff; /* Altera a cor ao passar o mouse */
+}
+
+h1{
+    text-align: center;
+    color: #8d3001;
+}
+
+form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #8d3001;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #8d3001;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      margin-top: 30px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b45729;
+    }
+
+.card-dia {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+    user-select: none;
+}
+.card-dia:hover {
+    background-color: #8d3001;
+}
+.card-dia.selecionado {
+    background-color: #8d3001;
+    color: white;
+    border-color: #b45729;
+}
+
+footer{
+    height: 100px;
+    background-color: #8d3001;
+    margin-top: auto;
+    text-align: center;
+    color: #ffffff;
+  }

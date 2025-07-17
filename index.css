@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Corpo principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url(img/ChatGPT\ Image\ 16\ de\ jul.\ de\ 2025\,\ 00_10_56.png);
+    width: 100%;
+    height: 800px;
+}
+
+/* Estilo da Navegação */
+nav {
+    font-family: 'Bebas Neue', sans-serif; /* Adicione fontes fallback */
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #8d30015d; /* Fundo laranja */
+    color: #fff;
+    padding: 5px 15px; /* Reduzido para ocupar menos espaço */
+    display: flex;
+    align-items: center;
+    height: 100px; /* Altura definida para manter uma proporção menor */
+}
+
+/* Logo secundário no lado esquerdo do menu */
+.logo {
+    position: absolute; /* Posição absoluta para fixar no canto */
+    left: 5%; /* Ajusta para o canto esquerdo */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para o centro vertical */
+    max-width: 100px; /* Reduz tamanho do logo secundário */
+    height: auto;
+}
+
+/* Contêiner do Menu de Navegação */
+.nav-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Menu de Navegação */
+#navMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    gap: 15px; /* Espaçamento aumentado entre os itens */
+}
+
+
+#navMenu li {
+    margin: 0;
+}
+
+#navMenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    padding: 8px 12px; /* Adiciona um pouco de espaço ao redor do texto */
+    transition: all 0.3s; /* Adiciona transição para animação */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#navMenu a:hover {
+    font-size: 18px;
+    color: goldenrod; /* Altera a cor ao passar o mouse */
+}
+
+.corpo1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+    box-shadow: rgba(17, 17, 17, 0.35) 0px 5px 15px;
+    transition: all 5s;
+}
+
+.texto1:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.texto h1{
+    text-align: center;
+    color: goldenrod;
+}
+
+.texto p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+aside{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.774);
+    width: 450px;
+    height: 350px;
+    padding-top: 20px;
+    display: flex;
+}
+
+aside iframe{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 1000px;
+}
+
+.planos{
+    background-color: #00000010;
+    width: 60%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: goldenrod;
+}
+
+.plano{
+    width: 300px;
+    height: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cabecalho{
+    text-align: center;
+    color: goldenrod;
+}
+
+.topico{
+    padding-left: 30px;
+    color: beige;
+}
+
+.carrossel-externo {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+  .avaliacoes{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .user{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .coluna{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+  .avaliacao{
+    border-radius: 30px;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 15px;
+    padding-left: 25px;
+    flex: 0 0 auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: transform 0.5s ease-in-out;
+    position: relative; /* necessário para animar */
+    box-shadow: rgba(41, 41, 41, 0.35) 0px 5px 15px;
+  }
+
+  .coluna p{
+    font-size: 13px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #686868;
+  }
+
+  .estrelas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    width: 120px;
+  }
+
+  .estrelas img{
+     width: 20px;
+     height: 20px;
+     margin: auto;
+  }
+
+  .texto{
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  h4{
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: -80px;
+    margin-bottom: 100px;
+  }
+
+  h4 a{
+    color: goldenrod;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .foto{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .foto img{
+    width: 60%;
+    height: 60%;
+  }
+
+  footer{
+    height: 100px;
+    background-color: #8d3001;
+    margin-top: auto;
+    text-align: center;
+    color: #ffffff;
+  }
